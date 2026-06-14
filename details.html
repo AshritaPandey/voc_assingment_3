@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Details | Premium Programs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container details-container">
+        <a href="index.html" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px; vertical-align: middle;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Internships
+        </a>
+        
+        <div class="details-card">
+            <div class="details-header" id="program-header">
+                <div class="details-icon-wrapper" id="program-icon">
+                    <!-- Icon dynamically loaded -->
+                </div>
+                <div>
+                    <h1 class="details-title" id="program-title">Internship Program</h1>
+                    <div class="details-tags">
+                        <span class="tag">📍 Virtual</span>
+                        <span class="tag">⏱️ 1-2 Months</span>
+                        <span class="tag">🗓️ Starts 05/11/2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="details-content">
+                <section>
+                    <h2>About the Program</h2>
+                    <p id="program-about">Loading program details...</p>
+                </section>
+                
+                <section>
+                    <h2>What You'll Learn</h2>
+                    <ul class="learning-list" id="program-learn">
+                        <!-- Loaded dynamically -->
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Requirements</h2>
+                    <ul class="learning-list">
+                        <li>Basic understanding of related programming concepts</li>
+                        <li>Strong problem-solving and analytical skills</li>
+                        <li>A passion for building high-quality software</li>
+                        <li>Access to a computer and stable internet connection</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div class="details-footer">
+                <button class="btn apply-btn" onclick="alert('Thank you for your interest! Your application has been submitted successfully.')">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const detailsData = {
+            web: {
+                title: "Web Development Internship",
+                gradient: "linear-gradient(135deg, #3b82f6, #2dd4bf)",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>`,
+                about: "Kickstart your journey in web development with our intensive internship program. You will work on real-world projects, collaborate with experienced developers, and learn the latest modern web technologies. This is a unique opportunity to build your portfolio and gain hands-on experience in a fast-paced environment.",
+                learn: [
+                    "Advanced HTML5, CSS3, and JavaScript",
+                    "Modern UI/UX design principles and implementation",
+                    "Responsive web design & CSS Grid/Flexbox",
+                    "Version control using Git and collaborative workflows on GitHub"
+                ]
+            },
+            app: {
+                title: "App Development Internship",
+                gradient: "linear-gradient(135deg, #8b5cf6, #d946ef)",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>`,
+                about: "Dive deep into mobile application development. Learn how to design, develop, and deploy fully functional mobile apps for iOS and Android platforms. You'll understand the full mobile app lifecycle from wireframing to App Store deployment.",
+                learn: [
+                    "Cross-platform app development basics",
+                    "Mobile UI/UX design patterns and gestures",
+                    "State management and RESTful API integration",
+                    "App store deployment processes and optimization"
+                ]
+            },
+            python: {
+                title: "Python Programming Internship",
+                gradient: "linear-gradient(135deg, #eab308, #f97316)",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 2 7 6 7 6H17C17 6 17 2 12 2ZM7 6C2 6 2 10 2 10H12C12 10 12 14 12 14C12 14 17 14 17 10C17 6 7 6 7 6Z"/><path d="M12 22C17 22 17 18 17 18H7C7 18 7 22 12 22ZM17 18C22 18 22 14 22 14H12C12 14 12 10 12 10C12 10 7 10 7 14C7 18 17 18 17 18Z"/></svg>`,
+                about: "Master Python programming through practical, hands-on projects. This program covers everything from core Python concepts to advanced applications in data science, automation, and backend development. Build a robust foundation for a career in software engineering or data.",
+                learn: [
+                    "Core Python fundamentals and advanced data structures",
+                    "Data analysis and visualization using industry libraries",
+                    "Backend API development and web scraping",
+                    "Task automation and scripting"
+                ]
+            },
+            java: {
+                title: "Java Programming Internship",
+                gradient: "linear-gradient(135deg, #ef4444, #f43f5e)",
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>`,
+                about: "Build robust, scalable enterprise applications with Java. Learn object-oriented programming principles, application design, and industry-standard frameworks used globally by top tech companies to power critical infrastructure.",
+                learn: [
+                    "Deep dive into Object-Oriented Programming (OOP) in Java",
+                    "Spring Boot framework basics for enterprise apps",
+                    "Database connectivity (JDBC) and management",
+                    "Software design patterns and best practices"
+                ]
+            }
+        };
+
+        // Parse the URL parameter to determine which content to load
+        const urlParams = new URLSearchParams(window.location.search);
+        const type = urlParams.get('type') || 'web'; // Default to web if no param
+        const data = detailsData[type];
+
+        if (data) {
+            // Inject dynamic data
+            document.getElementById('program-title').innerText = data.title;
+            document.getElementById('program-header').style.background = data.gradient;
+            document.getElementById('program-icon').innerHTML = data.icon;
+            document.getElementById('program-about').innerText = data.about;
+            
+            const learnList = document.getElementById('program-learn');
+            learnList.innerHTML = '';
+            data.learn.forEach(item => {
+                const li = document.createElement('li');
+                li.innerText = item;
+                learnList.appendChild(li);
+            });
+            
+            // Set dynamic page title
+            document.title = `${data.title} | Premium Programs`;
+        }
+    </script>
+</body>
+</html>
